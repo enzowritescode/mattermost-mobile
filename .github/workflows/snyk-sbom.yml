@@ -8,7 +8,7 @@ jobs:
   sbom:
     permissions:
       contents: write
-    uses: enzowritescode/reusable-actions /.github/workflows/snyk-sbom.yml@89025e4dd2be770539586c9830db471046e5e102 # mobile branch
+    uses: enzowritescode/reusable-actions/.github/workflows/snyk-sbom.yml@89025e4dd2be770539586c9830db471046e5e102 # mobile branch
     secrets: inherit
     with:
       is_mobile: true
