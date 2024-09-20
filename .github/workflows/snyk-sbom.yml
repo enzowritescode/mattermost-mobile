@@ -1,0 +1,14 @@
+name: Snyk - Software Bill of Materials (SBOM)
+on:
+  push:
+  release:
+    types: [published]
+
+jobs:
+  sbom:
+    permissions:
+      contents: write
+    uses: enzowritescode/reusable-actions /.github/workflows/snyk-sbom.yml@89025e4dd2be770539586c9830db471046e5e102 # mobile branch
+    secrets: inherit
+    with:
+      is_mobile: true
